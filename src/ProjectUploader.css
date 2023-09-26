@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-box {
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.additional-box-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to new line */
+    margin: 10px 0;
+}
+
+.additional-box {
+    flex: 1;
+    margin: 0 10px;
+    margin-bottom: 20px; /* Add some space between boxes */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    max-width: calc(50% - 20px); /* Two boxes in one line */
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.center-text {
+    text-align: center;
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+h1 {
+    text-align: center; /* Center the text */
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.project-description {
+    display: flex;
+    align-items: center;
+}
+
+.project-description img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.read-more-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.read-more-button:hover {
+    background-color: #0056b3;
+}
+
+.project-details {
+    display: none; /* Hide by default */
+}
+
+.project-details.active {
+    display: block; /* Show when active */
+}
